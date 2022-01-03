@@ -1,4 +1,3 @@
-/* Code By Webdevtrick ( https://webdevtrick.com ) */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 *{
 
@@ -214,7 +213,7 @@ body {
 }
 
 .nav-title {
-  color: #33312d;
+  color: #ffffff;
   font-weight: bold;
   height: var(--Nheight);
   margin-left: 20px;
@@ -235,23 +234,23 @@ body {
 }
 
 .item-1 {
-  background-color: #228A8C;
+  background-color: rgb(255, 255, 255);
 }
 
 .item-2 {
-  background-color: #228A8C;
+  background-color: rgb(255, 255, 255);
   
 }
 
 .item-3 {
-background-color: #228A8C}
+background-color: rgb(255, 255, 255)}
 
 .item-4 {
-  background-image: #11828F;
+  background-color: rgb(255, 255, 255);
 }
 
 .item-5 {
-  background-image: #228A8C;
+  background-color: #ffffff;
 }
 
 @media (min-width: 768px) {
