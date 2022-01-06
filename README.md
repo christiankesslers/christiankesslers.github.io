@@ -1,6 +1,7 @@
-## welcome to christian kessler's GitHub
+# welcome to christian kessler's blog GitHub repo
 
-### see my website at http://christiankesslers.blog
+### main website is at http://christiankesslers.blog
+
 
 
 
