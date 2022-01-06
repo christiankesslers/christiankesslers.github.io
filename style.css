@@ -772,5 +772,11 @@ p
   .copyright
   {
     padding: 10px 20px;
-  }
+}
+
+[aria-current="page"] {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
 }
