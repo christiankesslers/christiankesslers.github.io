@@ -134,31 +134,26 @@
                <p>interested in my work? let's chat, contact me meow! :3</p>
             </div>
             <div class="content">
-               <div class="contactForm">
-                    <form action="mailto:itsme@christiankesslers.blog">
-
-<div class="row">
-   <input type="text" name="" placeholder="First Name">
-   <input type="text" name="" placeholder="Last Name">
+               <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                  <label for="Name" class="fcf-label">Your name</label>
+                  <div class="fcf-input-group">
+                     <input type="text" id="Name" name="Name" class="fcf-form-control" required>
                   </div>
-                  <div class="row">
-                      <form action="mailto:christiank@myetherwallet.com" method="post"               enctype="text/plain">
-                     <input type="text" name="" placeholder="Email Address">
-                     <input type="text" name="" placeholder="Mobile No.">
-                  </div>
-                  <div class="row">
-                     <input type="text" name="" placeholder="Your Company">
-                     <input type="text" name="" placeholder="Your Website">
-                  </div>
-                  <div class="row2">
-                     <textarea placeholder="Message"></textarea>
-                  </div>
-                  <div class="row2">
-                     <input type="submit" value="Send!" href="mailto:itsme@christiankesslers.blog">
-                     </form>
-                  </div>
-               </div>
-            </div>
+                  <div class="fcf-form-group">
+                     <label for="Email" class="fcf-label">Your email address</label>
+                     <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                     </div>
+                     <div class="fcf-form-group">
+                        <label for="Message" class="fcf-label">Your message</label>
+                        <div class="fcf-input-group">
+                           <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"
+                              required></textarea>
+                        </div>
+                     </div>
+                     <div class="fcf-form-group">
+                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+                     </div>
          </section>
          
          <!-- Copyright -->
