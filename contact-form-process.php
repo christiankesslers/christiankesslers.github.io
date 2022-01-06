@@ -1,9 +1,7 @@
 <?php
-if (isset($_POST['Email'])) {
-
-    // EDIT THE FOLLOWING TWO LINES:
-    $email_to = "itsme@christiankesslers.blog";
-    $email_subject = "web contact form submission";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+   $email_to = "itsme@christiankesslers.blog";
+   $email_subject = "web contact form submission";
 
     function problem($error)
     {
