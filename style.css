@@ -136,11 +136,13 @@ body
 border-bottom: 1px solid rgba(0,0,0,0.5);
 }
 
+
 .main .topbar.active
 {
   left: 0;
   width: calc(100% - 0px);
 }
+
 
 .main .topbar .logo
 {
@@ -151,6 +153,7 @@ border-bottom: 1px solid rgba(0,0,0,0.5);
   text-transform: lowercase;
   letter-spacing: 1px;
 }
+
 
 .main .topbar .toggle
 {
@@ -165,11 +168,13 @@ border-bottom: 1px solid rgba(0,0,0,0.5);
   color: var(--black);
 }
 
+
 section
 {
   position: relative;
   min-height: 100vh;
 }
+
 
 .banner
 {
@@ -179,6 +184,7 @@ section
   padding: 0 20px;
 }
 
+
 .banner .content
 {
   display: flex;
@@ -186,6 +192,7 @@ section
   align-items: center;
   justify-content: center;
 }
+
 
 .banner .imgBox
 {
@@ -197,12 +204,14 @@ section
   margin-top:70px;
 }
 
+
 .banner .imgBox img
 {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 
 h3
 {
@@ -213,15 +222,18 @@ h3
   text-transform: uppercase;
 }
 
+
 p
 {
   color: #777;
 }
 
+
 .dark p
 {
   color: var(--black)
 }
+
 
 .btn
 {
@@ -236,9 +248,11 @@ p
   text-decoration: none;
 }
 
+
 .dark .btn:hover{
   background: #2196f3;
 }
+
 
 .socialMedia
 {
@@ -247,10 +261,12 @@ p
   display: flex;
 }
 
+
 .socialMedia li
 {
   list-style: none;
 }
+
 
 .socialMedia li a
 {
@@ -265,6 +281,7 @@ p
   color: var(--black);
   font-size: 1.2em;
 }
+
 
 .socialMedia li a:hover
 {
