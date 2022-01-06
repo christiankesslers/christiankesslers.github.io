@@ -1,4 +1,4 @@
-## welcome to Christian kessler's GitHub
+## welcome to christian kessler's GitHub
 
 ### see my website at http://christiankesslers.blog
 
