@@ -1,166 +1,352 @@
 <!DOCTYPE html>
-   <html lang="es">
-      <head>
-        <link rel="stylesheet" href="style.css">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="christian kessler's blog" content="" />
-        <meta name="christian kessler" content="" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
-          <title>christian kessler's blog</title>
-      </head>
-   <body>
-      <div class="container">
-      <div class="navigation">
-        <ul>
-           <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
-           <li><a href="#about" onclick="toggleMenu();">About Me</a></li>
-           <li><a href="#recent" onclick="toggleMenu();">Recent</a></li>
-           <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
-           <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-        </ul>
-      <div class="themeSwitch">
-       </div>
-        </div>
-      <div class="main">
-      <div class="topbar">
-         <a href="#" class="logo"="lowercase">christian kessler's blog</a>
-      <div class="toggle">
-         <i class="fa fa-bars" aria-hidden="true"></i>
-       </div>
-         </div>
+<html class="no-js" lang="en">
+<head>
 
-          <!-- Banner -->
-     <section class="banner" id="banner">
-      <div class="content">
-      <div class="imgBox">
-         <img src="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/me.jpg">
-          </div>
-          <h2>christian kessler</h2>
-              <p>developer
-              <br>musician
-              <br>raver
-              <br>writer
-              </p>
-          <a href="mailto:itsme@christiankesslers.blog" class="btn">contact me</a>
-             <ul class="socialMedia">
-                <li><a href="http://facebook.com/christiankessler"><i class="fab fa-facebook-f" aria-hidden="false"></i></a></li>
-                <li><a href="http://twitter.com/christianvance"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="http://instagram.com/richfieldraver"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="http://rarible.com/christiankesslers"><i class="fab fa-rarible" aria-hidden="true"></i></a></li>
-             </ul>
-           </div>
-          </section>
-          
-          <!-- About -->
-          <section class="about adjust" id="about">
-           <div class="title">
-               <h2>about me</h2>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>christian kessler's blog</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top" class="ss-preload">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row s-header__nav-wrap">
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#hero">home</a></li>
+                    <li><a class="smoothscroll" href="#about">about me</a></li>
+                    <li><a class="smoothscroll" href="#resume">projects</a></li>
+                    <li><a class="smoothscroll" href="#portfolio">portfolio</a></li>
+                    <li><a class="smoothscroll" href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div> <!-- end row -->
+        
+        <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+
+                <div class="s-hero__content-about">
+
+                    <h1>christian kessler</h1>
+
+                    <h3>
+                    <span>developer</span>, <span>musician</span>, <span>raver</span>, <span>creator</span>.               </h3>
+
+                    <div class="s-hero__content-social">
+                        <a href="http://facebook.com/christiankessler/"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href="http://twitter.com/christianvance/"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="http://instagram.com/richfieldraver/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        
+</i></a>                   
+                     </div>
+                </div> <!-- end s-hero__content-about -->
+
             </div>
-           <div class="content">
-           <div class="textBox">
-               <p>under construction! :3</p>
-           </div>
-           <div class="imageBox">
-               <img src="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/aboutme.jpg">
-          </div>
+        </div> <!-- s-hero__content -->
+
+        <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                <span class="scroll-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </div> <!-- s-hero__scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row">
+            <div class="column large-3 tab-12">
+                <img class="s-about__pic" src="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/me.jpg" alt="">
             </div>
-          </section>
-          
-          <!-- Recent -->
-          <section class="services adjust" id="recent">
-              <div class="title">
-                  <h2>recent articles</h2>
-                  <p>latest blog posts, small updates, etc.</p>
-              </div>
-              <div class="content">
-                  <div class="serviceBox">
-                      <a href="https://wax.atomichub.io/explorer/collection/kittiesincss"><img src="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/project_nftcollection.png" /></a>
-                     <h2><b>first divcat sold</b></h2>
-                     <p>a link to WAX NFT collection, click on the image to visit!
-                     </p>
-                 </div>
-                 <div class="serviceBox">
-                    <a href="https://christiankesslersblog.wordpress.com/2022/01/06/new-project-starshine-art/"><img src="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/rainbowexample.jpg" /></a>
-                    <h2><b>project: starshine art</b></h2>
+            <div class="column large-9 tab-12 s-about__content">
+                <h3>about me</h3>
+                <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
+                quae ab illo inventore veritatis et quasi architecto beatae vitae 
+                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
+                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
+                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, 
+                qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore 
+                magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis 
+                nostrum exercitationem ullam corporis suscipit laboriosam.
+                </p>
+
+                <hr>
+
+                <div class="row s-about__content-bottom">
+                    <div class="column w-1000-stack">
+                        <h3>Contact Details</h3>
+    
+                        <p>
+                        christian kessler <br>
+                        los angeles, ca 90201 US <br>
+                        <a href="tel:+16122231018">+1 612 223 1018</a> <br>
+                        <a href="mailto:itsme@christiankesslers.blog">itsme@christiankesslers.blog</a>
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end row -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+        
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">projects</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">divcat art collection</h4>
+                        <p class="resume-block__header-meta">
+                            <span>html & css nft art</span> 
+                        </p>
+                    </div>
+
+                    <p>
+                    <a href="https://tell.ie/Christia8249664/5Wx8BeOwJSKY"><img
+                            src="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/project_nftcollection.png" /></a>
+                    <p>a link to my divcat NFT collections, click on the image to visit!
+                    </p>
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">project starshine</h4>
+                        <p class="resume-block__header-meta">
+                            <span>creating a site for my fiance</span> 
+                        </p>
+                    </div>
+
+                    <a href="https://christiankesslersblog.wordpress.com/2022/01/06/new-project-starshine-art/"><img
+                            src="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/rainbowexample.jpg" /></a>
                     <p>my journey from notebook drawing to working wesbite, for my fiance.
                     </p>
-                 </div>
-                 <div class="serviceBox">
-                    <img src="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/cypherpunk.png" />
-                    <h2>i, cypherpunk:</h2>
-                    <p>why i identify as such, what it means, what it means to me and how i stumbled across such a vast subculture. coming soon.
-                    </p>
-                 </div>
-             </div>
-         </section>
-         
-         <!-- Projects -->
-         <section class="projects adjust" id="projects">
-            <div class="title">
-               <h2>my projects</h2>
-               <p>under construction</p>
+
+                </div> <!-- end resume-block -->
             </div>
-            <div class="content">
-               <div class="workBox">
-                  <div class="imageBox">
-                     <img src="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/project_nftcollection.png">
-                  </div>
-                  <div class="textBox">
-                     <h3>NFT Collection/Notes</h3>
-                  </div>
-               </div>
-               <div class="workBox">
-                  <div class="imageBox">
-                     <img src="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/djpic.jpg">
-                  </div>
-                  <div class="textBox">
-                     <h3>Music Pages</h3>
-                  </div>
-               </div>
-               <div class="workBox"><div class="imageBox">
-                  <img src="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/rainbowexample.jpg">
-                  </div>
-                  <div class="textBox">
-                     <h3><a href="http://christiankesslers.blog/examples.html">Code Examples/Snippets</a></h3>
-                  </div>
-               </div>
+
             </div>
-         </section>
-         
-         <!-- Contact -->
-         <section class="contact adjust" id="contact">
-            <div class="title">
-               <h2>get ahold of me</h2>
-               <p>interested in my work? let's chat, contact me meow! :3</p>
+        </div> <!-- s-resume__section -->
+
+    </section> <!-- end s-resume -->
+
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h3>portfolio</h3>
             </div>
-            <div class="content">
-               <form method="post" action="/contact-form-process.php">
-                  <label for="Name" class="fcf-label">Your name</label>
-                  <div class="fcf-input-group">
-                     <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-                  </div>
-                  <div class="fcf-form-group">
-                     <label for="Email" class="fcf-label">Your email address</label>
-                     <div class="fcf-input-group">
-                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-                     </div>
-                     <div class="fcf-form-group">
-                        <label for="Message" class="fcf-label">Your message</label>
-                        <div class="fcf-input-group">
-                           <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"
-                              required></textarea>
-                        </div>
-                     </div>
-                     <div class="fcf-form-group">
-                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
-                     </div>
-         </section>
-         
-         <!-- Copyright -->
-         <div class="copyright">
-            <p>Copyright 2021 christian kessler {template free to use}</p>
-         </div>
-         </div>
-      </div>
-      </body>
-       
+        </div>
+
+        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+
+            <div class="column folio-item">
+                <a href="#modal-01" class="folio-item__thumb">
+                    <img src="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/project_nftcollection.png" 
+                         srcset="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/project_nftcollection.png 1x, 
+                                 https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/project_nftcollection.png 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-02" class="folio-item__thumb">
+                    <img src="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/rainbowexample.jpg" 
+                         srcset="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/rainbowexample.jpg 1x, 
+                                 https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/rainbowexample.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+        </div> <!-- end folio-list -->
+
+
+        <!-- Modal Templates Popup
+        =========================================================== -->
+        <div id="modal-01" hidden>
+            <div class="modal-popup">
+                <img src="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/project_nftcollection.png" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>divcat 'pandora'</h5>
+                    <p>very first of the divcat series!</p>
+                    <ul class="modal-popup__cat">
+                        <li>rarible</li>
+                        <li>atomic hub</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-02" hidden>
+            <div class="modal-popup">
+                <img src="https://raw.githubusercontent.com/christiankesslers/christiankesslers.github.io/main/images/rainbowexample.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>project starshine</h5>
+                    <p>helping my fiance start a site for her many artistic ventures.</p>
+                    <ul class="modal-popup__cat">
+                        <li>design</li>
+                        <li>creation</li>
+                        <li>example</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+
+    </section> <!-- end s-portfolio -->
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row s-contact__header">
+            <div class="column large-12">
+                <h3 class="section-header-allcaps">contact me</h3>
+            </div>
+        </div>
+
+        <div class="row s-contact__content">
+
+            <div class="column large-7 medium-12">
+
+                <h4 class="huge-text">
+                want to get in touch? here's a few different options:
+                </h4>
+
+            </div>
+
+            <div class="column large-4 medium-12">
+
+                <div class="row contact-infos">
+                    <div class="column large-12 medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                email
+                            </h5>
+                            <p class="contact-block__content">
+                                <a class="mailtoui" href="mailto:itsme@christiankesslers.blog">itsme@christiankesslers.blog</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
+                    <div class="column large-12 medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                phone
+                            </h5>
+                            <p class="contact-block__content">
+                                <a href="tel:+1975432345">+1 612 223 1018</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
+
+                    <div class="column large-12">
+                        <a href="mailto:itsme@christiankesslers.blog" class="mailtoui btn btn--primary h-full-width">email me</a>
+                    </div>
+                </div> <!-- end contact-infos -->
+
+            </div>
+        </div> <!-- s-contact__content -->
+
+    </section> <!-- end s-contact -->
+    
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li><a href="http://facebook.com/christiankessler/"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/ChristianVance"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://instagram.com/RichfieldRaver/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                    </ul>
+            </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+             </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
