@@ -332,9 +332,6 @@ h1 {
  * ## grouping
  * ------------------------------------------------------------------- */
 
-/* 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE. */
-
 hr {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -697,17 +694,6 @@ input[type="password"], textarea {
     -moz-appearance: none;
     appearance: none;
 }
-
-
-/* ===================================================================
- * # Grid v3.0.0
- *
- *   -----------------------------------------------------------------
- * - Grid breakpoints are based on MAXIMUM WIDTH media queries, 
- *   meaning they apply to that one breakpoint and ALL THOSE BELOW IT.
- * - Grid columns without a specified width will automatically layout 
- *   as equal width columns.
- * ------------------------------------------------------------------- */
 
 /* rows
  * ------------------------------------- */
@@ -1617,17 +1603,17 @@ a:hover, a:active {
 
 /* type scale - ratio 1:2 | base: 18px
  * -------------------------------------------------------------------
- * --text-display-3 = (77.40px)
- * --text-display-2 = (64.50px)
- * --text-display-1 = (53.75px)
- * --text-xxxl      = (44.79px)
- * --text-xxl       = (37.32px)
- * --text-xl        = (31.10px)
- * --text-lg        = (25.92px)
- * --text-md        = (21.60px)
- * --text-size      = (18.00px) BASE
- * --text-sm        = (15.00px)
- * --text-xs        = (12.50px)
+ * --text-display-3 = (65.00px)
+ * --text-display-2 = (55.00px)
+ * --text-display-1 = (40.00px)
+ * --text-xxxl      = (36.00px)
+ * --text-xxl       = (30.00px)
+ * --text-xl        = (26.00px)
+ * --text-lg        = (20.00px)
+ * --text-md        = (16.00px)
+ * --text-size      = (14.00px) BASE
+ * --text-sm        = (12.00px)
+ * --text-xs        = (10.00px)
  * -------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, 
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -2396,7 +2382,7 @@ input[type="button"].btn--primary:focus {
     font-size: calc(3 * var(--space));
     line-height: 1;
     padding: 0 0.125em 0 0;
-    text-transform: uppercase;
+    text-transform: lowercase;
     background: transparent;
     color: var(--color-text-dark);
 }
@@ -2550,131 +2536,6 @@ input[type="button"].btn--primary:focus {
     font-weight: normal;
     font-style: normal;
     color: var(--color-text-light);
-}
-
-/* ------------------------------------------------------------------- 
- * ## skillbars
- * ------------------------------------------------------------------- */
-.skill-bars-fat {
-    list-style: none;
-    margin: var(--vspace-2) 0 var(--vspace-1);
-}
-
-.skill-bars-fat li {
-    height: 5.2rem;
-    background: transparent;
-    margin-bottom: 5.2rem;
-    padding: 0;
-    position: relative;
-}
-
-.skill-bars-fat li strong {
-    font-family: var(--font-1);
-    font-weight: 600;
-    color: var(--color-text-dark);
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    font-size: calc(var(--text-size) * 0.7778);
-    line-height: 2rem;
-    position: absolute;
-    top: -3.2rem;
-    left: 0;
-}
-
-.skill-bars-fat li .progress {
-    background: var(--color-gray-3);
-    position: relative;
-    height: 100%;
-    border-radius: 3px;
-    overflow: hidden;
-    position: relative;
-}
-
-.skill-bars-fat li .progress::before {
-    content: "";
-    display: block;
-    height: 100%;
-    background-color: var(--color-gray-18);
-}
-
-.skill-bars-fat li .percent5::before {
-    width: 5%;
-}
-
-.skill-bars-fat li .percent10::before {
-    width: 10%;
-}
-
-.skill-bars-fat li .percent15::before {
-    width: 15%;
-}
-
-.skill-bars-fat li .percent20::before {
-    width: 20%;
-}
-
-.skill-bars-fat li .percent25::before {
-    width: 25%;
-}
-
-.skill-bars-fat li .percent30::before {
-    width: 30%;
-}
-
-.skill-bars-fat li .percent35::before {
-    width: 35%;
-}
-
-.skill-bars-fat li .percent40::before {
-    width: 40%;
-}
-
-.skill-bars-fat li .percent45::before {
-    width: 45%;
-}
-
-.skill-bars-fat li .percent50::before {
-    width: 50%;
-}
-
-.skill-bars-fat li .percent55::before {
-    width: 55%;
-}
-
-.skill-bars-fat li .percent60::before {
-    width: 60%;
-}
-
-.skill-bars-fat li .percent65::before {
-    width: 65%;
-}
-
-.skill-bars-fat li .percent70::before {
-    width: 70%;
-}
-
-.skill-bars-fat li .percent75::before {
-    width: 75%;
-}
-
-.skill-bars-fat li .percent80::before {
-    width: 80%;
-}
-
-.skill-bars-fat li .percent85::before {
-    width: 85%;
-}
-
-.skill-bars-fat li .percent90::before {
-    width: 90%;
-}
-
-.skill-bars-fat li .percent95::before {
-    width: 95%;
-}
-
-.skill-bars-fat li .percent100::before {
-    width: 100%;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3840,16 +3701,16 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1200px) {
     .s-about__pic {
-        width: var(--vspace-4_5);
-        height: var(--vspace-4_5);
+        width: 30%;
+        height: 30%;
         border-width: 1.4rem;
     }
 }
 
 @media screen and (max-width: 900px) {
     .s-about__pic {
-        width: var(--vspace-4);
-        height: var(--vspace-4);
+        width: 30%;
+        height: 30%;
         border-width: 1.2rem;
     }
 }
