@@ -4494,3 +4494,62 @@ input[type="button"].btn--primary:focus {
         margin-right: 1.4rem;
     }
 }
+
+@brand-black: #242424;
+@brand-dark: #414141;
+@brand-grey: #767676;
+@brand-blue: #0366D6;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html,
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: @brand-blue;
+  letter-spacing: -2px;
+  position: relative;
+
+  &.active {
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: -20px;
+      width: 10px;
+      height: 100%;
+      display: block;
+      background: @brand-blue;
+    }
+  }
+}
+
+p {
+  color: @brand-grey;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
