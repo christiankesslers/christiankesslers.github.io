@@ -315,3 +315,22 @@
     })();
 
 })(document.documentElement);
+
+let element = document.querySelector('#headline');
+
+function animate(element, duration) {
+  let array = element.innerText;
+  element.innerHTML = '';
+  let index = 0;
+  let interval = setInterval(function () {
+    // element.classList[element.classList.contains('active') ? 'remove' : 'add']('active');
+    element.innerText += array[index];
+    if (array.length - 1 == index) {
+      clearInterval(interval);
+      // element.classList.remove('active');
+    }
+    index++;
+  }, duration);
+}
+
+animate(element, 200);
